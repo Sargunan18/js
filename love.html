@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: pink;
+            font-family: fantasy;
+            font-size: 4em;
+            text-align: center;
+            
+        }
+
+        #content{
+             /* border: 2px solid rgb(194, 216, 219);
+            margin: 0 300px 0;
+            padding: 50px;
+            border-radius: 10px 10px 10px 10px;
+            text-align: center;
+            font-size: 4em;
+            font-family: 'Courier New', Courier, monospace;
+            color: blueviolet; */
+
+            
+            display: flex;
+            flex-direction: column;   /* 🔥 one by one */
+            align-items: center;      /* center align */
+            gap: 20px;                /* space between items */
+        }
+
+
+
+        
+        #foot{
+            border: 2px solid rgb(194, 216, 219);
+            margin: 0 300px 0;
+            padding: 5px;
+            border-radius: 10px 10px 10px 10px;
+            text-align: center;
+            font-family: monospace;
+            font-size: 3em;
+            
+            
+        }
+        body{
+            background-image:url(./WhatsApp\ Image\ 2025-09-30\ at\ 15.19.31_119296ec.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 20%;
+        }
+        input[type="text"] {
+            width: 320px;        /* box width */
+            height: 45px;        /* box height */
+            padding: 10px;
+            font-size: 18px;     /* text size */
+            border-radius: 8px;
+        }
+        button {
+            width: 180px;
+            height: 45px;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #page-center {
+            display: flex;
+            justify-content: center;   /* horizontal center */
+            align-items: center;       /* vertical center */
+            min-height: 100vh;
+        }
+        
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #content{
+                margin: 0 40px;
+                padding: 30px;
+                font-size: 2.2em;
+            }
+            #foot{
+                margin: 20px 40px;
+                padding: 10px;
+                font-size: 2em;
+            }
+            h1{
+                font-size: 3em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #content{
+                margin: 10px;
+                padding: 20px;
+                font-size: 1.6em;
+            }
+            #foot{
+                margin: 10px;
+                padding: 8px;
+                font-size: 1.6em;
+            }
+            h1{
+                font-size: 2em;
+            }
+            input[type="text"], button {
+                width: 90%;
+                font-size: 1.1em;
+            }
+        }
+  
+    </style>
+</head>
+<body>
+    <h1>love calculater</h1>
+    <!-- <div id="content">
+    <label for="">your name</label>
+    <input type="text"><br>
+    <label for="">lover name</label>
+    <input type="text"><br>
+     </div> -->
+    <div id="page-center">
+         <div id="content">
+    <input type="text" placeholder="Your name">
+    <input type="text" placeholder="Love name">
+    
+</div>
+     <div id="foot">
+        <button id="s"> Calculate Love</button><br>
+        <span id="love"></span>
+    
+
+     </div>
+    </div>
+    <script src="./veera.js"></script>
+</body>
+</html>
